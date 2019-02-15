@@ -1,7 +1,7 @@
 const initialState = [
   {
     completedAt: Date.now(),
-    answers: [{ questionId: "1", choice: "great" }]
+    answers: [{ questionId: "1", choice: "Great" }]
   }
 ];
 

@@ -1,4 +1,4 @@
-# Relay's Survey Take-Home Exercise
+# Relay's Front-End Take Home Exercise
 
 Hello and thanks for taking the time to do Relay's take-home coding exercise! What we have here is a survey engine and we need you to make some changes to it. The project should be set up and ready to go with some "dummy" data already plugged in.
 
