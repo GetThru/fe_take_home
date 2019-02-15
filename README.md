@@ -1,8 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Relay's Survey Take-Home Exercise
 
-## Available Scripts
+Hello and thanks for taking the time to do Relay's take-home coding exercise! What we have here is a survey engine and we need you to make some changes to it. The project should be set up and ready to go with some "dummy" data already plugged in.
 
-In the project directory, you can run:
+## Directions
+
+1. Clone this repo
+2. Create a new _private_ repository under your account on GitHub (or similar service) and push the cloned project there. Don't just fork it because then other people can see your solution. You'll probably have to remove the existing git remotes in `.git/config` before doing this.
+3. Create a branch other than master that will contain your work.
+4. Do the work described in "The Exercise" section.
+5. Make a pull request of your working branch to master. Write a description of your design choices, thoughts, setbacks, etc. in the PR description (template provided).
+6. Email a link to the PR back to me and I'll review it.
+
+## The Exercise
+
+1. Add a new route at `questions/new`. Make a new page and a form to add new questions. Add these questions to the Redux `questions` store. Don't worry about styling the form.
+2. Add the ability to complete a survey. You should make your selection for each question, click "Finish Survey" at the bottom, and the results should then be stored in the Redux `results` store. After submitting, the radio boxes should be cleared and be ready another submission. Every question does not have to be answered but at least one does.
+3. Style the header, footer, and the "Survey Questions" page, using SCSS only (no Bootstrap or similar), with the following guidelines:
+
+- Use flexbox
+- Make the header and footer full-width. Give them both a height of 100px and background color of your choosing.
+- The header's links should be right-aligned and vertically centered. The title should stay left-aligned and also be vertically centered.
+- The footer should be sticky to the bottom of the page but always below any other content. The text should be vertically and horizontally centered.
+- Each survey question should be a "card" that wraps on the page. [Something like this](https://bulma.io/documentation/components/card/). They should line up horizontally left to right until the end of the page and then wrap onto a new line.
+- Make the "Finish Survey" button big and styled to your liking.
+- The form page does not have to be styled.
+- Don't worry about mobile or smaller widths.
+- Use your discretion on the styling but don't let it take up too much of your time.
+
+## Notes
+
+- This is supposed to test your skills, not take up all of your free time. If you find yourself spending more than 2-3 hours on it use your best judgement to find a stopping point and write a short description of what the challenges were.
+- The project is already set up to work with the [Redux devtools extension](https://github.com/zalmoxisus/redux-devtools-extension).
+
+## Starting The Server
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In the project directory, you can run:
 
 ### `npm start`
 
@@ -16,53 +48,3 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Survey from "./Survey";
+import SurveyResults from "./SurveyResults";
 
 class App extends Component {
   render() {
@@ -11,6 +12,9 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" component={Survey} />
+          <footer>
+            <SurveyResults />
+          </footer>
         </div>
       </Router>
     );

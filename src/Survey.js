@@ -5,12 +5,6 @@ import Question from "./Question";
 
 class Survey extends React.Component {
   static propTypes = {
-    answers: PropTypes.arrayOf(
-      PropTypes.shape({
-        questionId: PropTypes.string.isRequired,
-        choice: PropTypes.string.isRequired
-      })
-    ).isRequired,
     questions: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
@@ -37,7 +31,6 @@ class Survey extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    answers: state.answers,
     questions: Object.values(state.questions)
   };
 };
