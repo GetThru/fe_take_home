@@ -11,6 +11,7 @@ const reducer = (state = initialState, action) => {
 
 export default reducer;
 
+// Selectors
 export const completedSurveys = state => {
   return Object.values(state.results).length;
 };

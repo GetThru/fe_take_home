@@ -1,7 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+
 import Question from "./Question";
+import { allQuestions } from "./store/questions";
 
 class Survey extends React.Component {
   static propTypes = {
@@ -31,7 +33,7 @@ class Survey extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    questions: Object.values(state.questions)
+    questions: allQuestions(state)
   };
 };
 
